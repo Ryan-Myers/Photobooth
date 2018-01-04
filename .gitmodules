@@ -1,0 +1,8 @@
+[submodule "canon-selphy-print"]
+	path = canon-selphy-print
+	url = https://github.com/goued120/canon-selphy-print.git
+	branch = master
+[submodule "gimp-print-source"]
+	path = gimp-print-source
+	url = https://git.code.sf.net/p/gimp-print/source
+	branch = master
