@@ -6,3 +6,7 @@
 	path = gimp-print-source
 	url = https://git.code.sf.net/p/gimp-print/source
 	branch = master
+[submodule "raspi-photobooth"]
+	path = raspi-photobooth
+	url = https://github.com/Ryan-Myers/raspi-photobooth.git
+	branch = master
