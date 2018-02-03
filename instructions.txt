@@ -1,10 +1,13 @@
 #!/bin/bash
 #Install all packagees in installed_packages.txt
-sudo ln -T /usr/bin/libtoolize /usr/bin/libtool
-sudo ./configure --enable-cups-ppds --enable-cups-ppds-at-top-level --disable-translated-cups-ppds
+#sudo ln -T /usr/bin/libtoolize /usr/bin/libtool #May not be necessary
+#Next line might not need all of the commands, but at least some of them. Also, sudo isn't likely needed.
+sudo libtoolize && sudo aclocal && sudo autoheader && sudo autoconf && sudo automake --add-missing
+sudo ./autogen.sh --enable-cups-ppds --enable-cups-ppds-at-top-level --disable-translated-cups-ppds
 locate db2html
 cd ./doc/developer
-sudo nano Makefile #Edit the Makefile in the doc/developer folder to add the location of the DB2HTML executable sudo make clean
+sudo nano Makefile #Edit the Makefile in the doc/developer folder to add the location of the DB2HTML executable 
+sudo make clean
 sudo make
 sudo make install
 #Add the printer using the instructions below
