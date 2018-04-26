@@ -28,6 +28,7 @@ docbook
 docbook-dsssl
 docbook-utils
 docbook-xml
+doxygen
 flex
 fonts-lmodern
 fonts-texgyre
