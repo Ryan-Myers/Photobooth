@@ -9,11 +9,11 @@ libtoolize && aclocal && autoheader && autoconf && automake --add-missing
 #cd ./doc/developer
 #nano Makefile #Edit the Makefile in the doc/developer folder to add the location of the DB2HTML executable 
 make clean
-sudo make
+make
 sudo make install
 #Add the printer using the instructions below
 #https://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/
 sudo /etc/init.d/cups restart
 git clone https://github.com/goued120/canon-selphy-print.git
 cd canon-selphy-print/
-sudo ./print-selphy -P Canon_SELPHY_CP1300 postcard ~/Downloads/IMG_20171111_161534.jpg
+./print-selphy -P Canon_SELPHY_CP1300 postcard ~/Downloads/IMG_20171111_161534.jpg
