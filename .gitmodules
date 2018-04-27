@@ -1,6 +1,6 @@
 [submodule "canon-selphy-print"]
 	path = canon-selphy-print
-	url = https://github.com/goued120/canon-selphy-print.git
+	url = git@github.com:Ryan-Myers/canon-selphy-print.git
 	branch = master
 [submodule "gimp-print-source"]
 	path = gimp-print-source
