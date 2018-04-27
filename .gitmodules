@@ -8,5 +8,5 @@
 	branch = master
 [submodule "raspi-photobooth"]
 	path = raspi-photobooth
-	url = https://github.com/Ryan-Myers/raspi-photobooth.git
+	url = git@github.com:Ryan-Myers/raspi-photobooth.git
 	branch = master
