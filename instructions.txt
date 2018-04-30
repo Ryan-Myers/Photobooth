@@ -14,6 +14,5 @@ sudo make install
 #Add the printer using the instructions below
 #https://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/
 sudo /etc/init.d/cups restart
-git clone https://github.com/goued120/canon-selphy-print.git
-cd canon-selphy-print/
-./print-selphy -P Canon_SELPHY_CP1300 postcard ~/Downloads/IMG_20171111_161534.jpg
+#Enable photbooth running on startup
+cp raspi-photobooth/photobooth.desktop ~/.config/autostart/photobooth.desktop
