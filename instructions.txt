@@ -16,3 +16,4 @@ sudo make install
 sudo /etc/init.d/cups restart
 #Enable photbooth running on startup
 cp raspi-photobooth/photobooth.desktop ~/.config/autostart/photobooth.desktop
+sudo cp stp-canon-cp1300.5.3.ppd.gz /usr/share/cups/model/C/stp-canon-cp1300.5.3.ppd.gz
