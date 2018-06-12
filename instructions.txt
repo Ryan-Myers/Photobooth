@@ -13,7 +13,8 @@ make
 sudo make install
 #Add the printer using the instructions below
 #https://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/
+#install the ppd
+sudo cp stp-canon-cp1300.5.3.ppd.gz /usr/share/cups/model/C/stp-canon-cp1300.5.3.ppd.gz
 sudo /etc/init.d/cups restart
 #Enable photbooth running on startup
 cp raspi-photobooth/photobooth.desktop ~/.config/autostart/photobooth.desktop
-sudo cp stp-canon-cp1300.5.3.ppd.gz /usr/share/cups/model/C/stp-canon-cp1300.5.3.ppd.gz
