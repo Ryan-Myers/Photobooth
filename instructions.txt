@@ -1,6 +1,8 @@
 #!/bin/bash
 #Install all packagees in installed_packages.txt
 #sudo ln -T /usr/bin/libtoolize /usr/bin/libtool #May not be necessary
+#download the latest gutenprint source from https://sourceforge.net/projects/gimp-print/files/gutenprint-5.3/
+#extract it and change into its root folder
 #Next line might not need all of the commands, but at least some of them.
 libtoolize && aclocal && autoheader && autoconf && automake --add-missing
 ./autogen.sh --enable-cups-ppds --enable-cups-ppds-at-top-level --disable-translated-cups-ppds
