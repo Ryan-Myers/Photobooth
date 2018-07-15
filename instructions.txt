@@ -6,13 +6,13 @@ cd gimp-print-source
 ./autogen.sh
 #Next line might not need all of the commands, but at least some of them.
 libtoolize && aclocal && autoheader && autoconf && automake --add-missing
-./autogen.sh --enable-cups-ppds --enable-cups-ppds-at-top-level --disable-translated-cups-ppds
-./configure --enable-cups-ppds --enable-cups-ppds-at-top-level --disable-translated-cups-ppds
+./autogen.sh --enable-cups-ppds --enable-cups-ppds-at-top-level --disable-translated-cups-ppds --disable-testpattern
+./configure --enable-cups-ppds --enable-cups-ppds-at-top-level --disable-translated-cups-ppds --disable-testpattern
 #locate db2html
 #cd ./doc/developer
-#nano Makefile #Edit the Makefile in the doc/developer folder to add the location of the DB2HTML executable 
+#nano Makefile #Edit the Makefile in the doc/developer folder to add the location of the DB2HTML executable (usually /usr/bin/db2html)
 make clean
-make
+make -j
 sudo make install
 #Add the printer using the instructions below
 #https://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/
